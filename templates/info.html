@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Info: {{anime_info}}</p>
+    {{anime_info.title}}
+    <br>
+    {{anime_info.synopsis}}
+    <br>
+    ID: {{anime_info.id}}
+    <br>
+    Generos:
+    {% for genre in anime_info.genres %}
+    {{ genre }}
+    {% endfor %}
+    <br>
+    <!--<img src="{{anime_info.banner}}" alt="">-->
+    <br>
+    Estado: {{anime_info.debut}}
+    <br>
+    Episodios:
+    {% for episodes in anime_info.episodes %}
+    <br>
+    Capitulo:{{ episodes.id}}
+    <button href="/anime/<id>/episodes">Ver Video</button>
+        <a href="/anime/{{episodes.anime}}/{{episodes.id}}/episodes">Ver</a>
+    {% endfor %}
+</body>
+</html>

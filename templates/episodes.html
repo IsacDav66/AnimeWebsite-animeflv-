@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodes</title>
+</head>
+
+<body>
+    <h1>Episodio</h1>
+
+
+    <ul>
+    {% for link in anime_info %}
+        <li>
+            <p>Episode {{ loop.index }}</p>
+            <p>{{link.server}} :</p>
+            <form action="/play_episode" method="post">
+                
+                <input type="hidden" name="url" value="{{ link.url }}">
+                <button type="submit">Play Episode</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
