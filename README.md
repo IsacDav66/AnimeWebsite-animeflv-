@@ -1,7 +1,8 @@
 # Resumen del Proyecto: Buscador de Anime con Flask
+Este proyecto es una aplicación web desarrollada con Python y Flask que permite a los usuarios buscar y reproducir episodios de anime. La aplicación utiliza una API externa para obtener información sobre animes y sus episodios.
+
 ![image](https://github.com/user-attachments/assets/fe41e915-84d7-4dc3-8c23-432973f5dc8d)
 
-Este proyecto es una aplicación web desarrollada con Python y Flask que permite a los usuarios buscar y reproducir episodios de anime. La aplicación utiliza una API externa para obtener información sobre animes y sus episodios.
 
 **Características Principales:**
 
